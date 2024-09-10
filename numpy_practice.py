@@ -51,10 +51,32 @@ new_array = my_array.reshape(3,5)
 max_int = new_array.max()
 min_int = new_array.min()
 
-print(new_array)
-print("max", max_int)
-print("min", min_int)
-print("max index", new_array.argmax())
-print("min index", new_array.argmin())
+# print(new_array)
+# print("max", max_int)
+# print("min", min_int)
+# print("max position", new_array.argmax())
+# print("min position", new_array.argmin())
 
+my_array = np.arange(0, 100, 5)                 ### Create array
 
+# print("original array: \n", my_array)
+
+new_array = my_array.copy()                 ### Copy array
+new_array = new_array[0:5]                 ### Slice array
+
+# print("slice\n", new_array)
+
+new_array[:] = 7                 ### Broadcast new integer to the slice
+
+# print("sliced array: \n", new_array)                 ### New integer in slice
+# print("original array: \n", my_array)                 ### Does not change original array because we copied it
+
+divide_by_3 = my_array % 3 == 0             ### returns an array of boolean values for each item in the array
+
+# mod_3 = my_array[divide_by_3]           ### returns an array of values from original array where values are true
+
+mod_3 = my_array[my_array % 3 == 0]
+
+print(mod_3)
+# print(my_array)
+# print(divide_by_3)
