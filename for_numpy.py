@@ -85,3 +85,91 @@ my_array = np.arange(64).reshape(8,8)
 print(my_array)
 
 print('slice\n', my_array[4:,:7])
+
+
+small_arr = np.arange(0,11)
+large_arr = np.arange(0,20)
+
+# added_array = small_arr + large_arr           ### can't do this because the arrays are not the same shape
+
+
+err = small_arr / 0         ### does not give an error and still gives feedback
+
+# print(err)
+
+print("\n=========================================\n")
+
+my_array = np.zeros(10)
+
+print("\nzeros array:\n\n", my_array)
+
+my_array = np.ones(10)
+
+print("\nones array:\n\n", my_array)
+
+my_array = np.ones(10) * 5
+
+print("\nfives array:\n\n", my_array)
+
+my_array = np.arange(10,50)
+
+print("\n10 to 50 array:", my_array)
+
+my_array = np.arange(10,50,)
+my_array = my_array[my_array % 2 == 0]
+
+
+print("\n10 to 50 array all even:\n\n", my_array)
+
+my_array = np.arange(0,9).reshape(3,3)
+
+print("\n 0 to 8 - 3x3 \n\n", my_array)
+
+my_array = np.eye(3)
+
+print("\n identity matrix 3x3: \n\n", my_array)
+
+my_array = np.random.rand(1)
+
+
+print("\n random integer: \n\n", my_array)
+
+
+my_array = np.random.randn(5,5)
+
+print("\n normal dist 25 random: \n\n", my_array)
+
+my_array = np.arange(1,101).reshape(10,10) / 100
+
+print("\n copied matrix: \n\n", my_array)
+
+my_array = np.linspace(0,1,20)
+
+print("\n 20 linear spaced: \n\n", my_array)
+
+
+mat = np.arange(1,26).reshape(5,5)
+
+
+my_array = mat.copy()[2:, 1:]
+
+
+print("\n matrix indices selection: \n\n", my_array)
+
+my_array = mat.copy()[3, -1]
+
+print("\n matrix single selection: \n\n", my_array)
+print(mat)
+
+my_array = mat.copy()[:3,1].reshape(1,3)
+
+print("\n matrix selection: \n\n", my_array)
+
+my_array = mat.copy()[-1,:]
+
+print("\n matrix last row: \n\n", my_array)
+
+my_array = mat.copy()[-2:, :]
+
+print("\n matrix last 2 rows: \n\n", my_array)
+
