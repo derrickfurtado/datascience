@@ -75,8 +75,13 @@ divide_by_3 = my_array % 3 == 0             ### returns an array of boolean valu
 
 # mod_3 = my_array[divide_by_3]           ### returns an array of values from original array where values are true
 
-mod_3 = my_array[my_array % 3 == 0]
+mod_3 = my_array[my_array % 3 == 0]     ### same as line 76
 
-print(mod_3)
 # print(my_array)
 # print(divide_by_3)
+
+my_array = np.arange(64).reshape(8,8)
+
+print(my_array)
+
+print('slice\n', my_array[4:,:7])
