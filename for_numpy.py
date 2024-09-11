@@ -117,6 +117,7 @@ print("\n10 to 50 array:", my_array)
 
 my_array = np.arange(10,50,)
 my_array = my_array[my_array % 2 == 0]
+# my_array = np.arange(10,51,2)
 
 
 print("\n10 to 50 array all even:\n\n", my_array)
@@ -140,6 +141,8 @@ my_array = np.random.randn(5,5)
 print("\n normal dist 25 random: \n\n", my_array)
 
 my_array = np.arange(1,101).reshape(10,10) / 100
+""" OR """
+# my_array = np.linspace(1,101).reshape(10,10)
 
 print("\n copied matrix: \n\n", my_array)
 
@@ -165,7 +168,7 @@ my_array = mat.copy()[:3,1].reshape(1,3)
 
 print("\n matrix selection: \n\n", my_array)
 
-my_array = mat.copy()[-1,:]
+my_array = mat.copy()[-1:,:]
 
 print("\n matrix last row: \n\n", my_array)
 
