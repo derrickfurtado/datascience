@@ -173,3 +173,7 @@ my_array = mat.copy()[-2:, :]
 
 print("\n matrix last 2 rows: \n\n", my_array)
 
+print(mat.sum())                    ### get sum of whole matrix
+print(mat.std())                    ### get standard deviation of whole matrix
+print(mat.sum(0))                   ### get sum of all columns
+print(mat.sum(-1))                  ### get sum of each row
