@@ -180,3 +180,4 @@ print(mat.sum())                    ### get sum of whole matrix
 print(mat.std())                    ### get standard deviation of whole matrix
 print(mat.sum(0))                   ### get sum of all columns
 print(mat.sum(-1))                  ### get sum of each row
+
